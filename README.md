@@ -1,5 +1,9 @@
 # config-sentinel 🛡️
 
+[![CI](https://github.com/raj-singh-giift/config-sentinel/actions/workflows/ci.yml/badge.svg)](https://github.com/raj-singh-giift/config-sentinel/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/config-sentinel)](https://www.npmjs.com/package/config-sentinel)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Catch missing config keys **before production** — not after the crash.
 
 Statically scans your codebase for every `process.env.KEY` and `config.x.y` reference, cross-checks against your actual config sources, and reports anything missing or unused. Runs in CI as a CLI or at app startup as a library.
