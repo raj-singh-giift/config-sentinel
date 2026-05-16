@@ -1,0 +1,53 @@
+{
+  "name": "config-sentinel",
+  "version": "0.1.0",
+  "description": "Validate all your config sources and catch missing keys before production",
+  "author": "Raj Singh <raj.singh@xoxoday.com>",
+  "homepage": "https://github.com/raj-singh-giift/config-sentinel#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raj-singh-giift/config-sentinel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raj-singh-giift/config-sentinel/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "config-sentinel": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "config",
+    "env",
+    "validation",
+    "typescript",
+    "cli",
+    "dotenv",
+    "missing-keys"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "glob": "^13.0.6",
+    "ts-morph": "^22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}
